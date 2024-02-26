@@ -1,9 +1,9 @@
 use sycamore::prelude::*;
 
 #[derive(Prop)]
-pub struct MDLThemeProps {
-    pub primary: String,
-    pub accent: String,
+pub struct MDLThemeProps<'a> {
+    pub primary: &'a str,
+    pub accent: &'a str,
 }
 
 #[component]
@@ -24,7 +24,7 @@ pub fn MDL<G: Html>(cx: Scope, props: MDLThemeProps) -> View<G> {
 
 #[derive(Prop)]
 pub struct MDLProps<'a, G: Html> {
-    pub class: String,
+    pub class: &'a str,
     pub children: Children<'a, G>,
 }
 

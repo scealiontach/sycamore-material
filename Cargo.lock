@@ -174,13 +174,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "sycamore-material"
-version = "0.1.0"
-dependencies = [
- "sycamore",
-]
-
-[[package]]
 name = "sycamore-reactive"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -207,6 +200,13 @@ dependencies = [
  "sycamore-reactive",
  "wasm-bindgen",
  "web-sys",
+]
+
+[[package]]
+name = "sycamore_material"
+version = "0.1.0"
+dependencies = [
+ "sycamore",
 ]
 
 [[package]]
