@@ -40,7 +40,7 @@ pub fn material_icon<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View
 }
 
 #[component]
-pub fn mdl_textfield<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View<G> {
+pub fn textfield<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View<G> {
     let children = props.children.call(cx);
     let class = format!("mdl-textfield mdl-js-textfield {0}", props.class);
     view! {cx,
@@ -51,7 +51,7 @@ pub fn mdl_textfield<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View
 }
 
 #[component]
-pub fn mdl_logo<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View<G> {
+pub fn logo<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View<G> {
     let children = props.children.call(cx);
     let class = format!("mdl-logo {0}", props.class);
     view! {cx,
@@ -62,7 +62,7 @@ pub fn mdl_logo<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View<G> {
 }
 
 #[component]
-pub fn mdl_button<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View<G> {
+pub fn button<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View<G> {
     let class = format!("mdl-button mdl-js-button {}", props.class);
     let children = props.children.call(cx);
     view! {cx,
