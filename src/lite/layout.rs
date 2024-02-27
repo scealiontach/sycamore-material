@@ -6,8 +6,11 @@ pub fn layout<'a, G: Html>(cx: Scope<'a>, props: MDLProps<'a, G>) -> View<G> {
     let children = props.children.call(cx);
     let class = format!("mdl-layout mdl-js-layout {0}", props.class);
     view! {cx,
-      div(class=class) {
-        (children)
+      div(class="mdl-layout__container") {
+        div(class=class) {
+          (children)
+          div(class="mdl-layout__obfuscator")
+        }
       }
     }
 }

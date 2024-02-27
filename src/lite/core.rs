@@ -24,7 +24,9 @@ pub fn MDL<G: Html>(cx: Scope, props: MDLThemeProps) -> View<G> {
 
 #[derive(Prop)]
 pub struct MDLProps<'a, G: Html> {
+    #[builder(default)]
     pub class: &'a str,
+    #[builder(default)]
     pub children: Children<'a, G>,
 }
 
